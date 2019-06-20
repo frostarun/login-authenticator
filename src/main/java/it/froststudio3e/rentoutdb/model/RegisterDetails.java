@@ -3,7 +3,7 @@ package it.froststudio3e.rentoutdb.model;
 import lombok.Getter;
 import lombok.Setter;
 
-public class LoginDetails {
+public class RegisterDetails {
 
 	@Getter
 	@Setter
@@ -18,7 +18,7 @@ public class LoginDetails {
 	public String token;
 
 	// Constructors
-	public LoginDetails() {
+	public RegisterDetails() {
 	}
 
 }

@@ -1,0 +1,147 @@
+2019-06-20 19:38:42,892 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Starting LoginAuthenticatorApplication on SVILP188 with PID 11148 (D:\Arun\GitHub\login-authenticator\target\classes started by gbs04993 in D:\Arun\GitHub\login-authenticator)
+2019-06-20 19:38:42,894 DEBUG it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-20 19:38:42,895 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] No active profile set, falling back to default profiles: default
+2019-06-20 19:38:43,523 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-20 19:38:43,535 DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Scanning for repositories in packages it.froststudio3e.login.auth.
+2019-06-20 19:38:43,540 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-06-20 19:38:44,220 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-06-20 19:38:44,220 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-20 19:38:44,380 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-06-20 19:38:45,113 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-20 19:38:45,113 INFO org.mongodb.driver.cluster [main] Adding discovered server localhost:27017 to client view of cluster
+2019-06-20 19:38:45,504 ERROR org.apache.catalina.util.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at it.froststudio3e.login.auth.LoginAuthenticatorApplication.main(LoginAuthenticatorApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-06-20 19:38:45,508 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2019-06-20 19:38:45,517 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-06-20 19:40:33,082 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Starting LoginAuthenticatorApplication on SVILP188 with PID 14832 (D:\Arun\GitHub\login-authenticator\target\classes started by gbs04993 in D:\Arun\GitHub\login-authenticator)
+2019-06-20 19:40:33,084 DEBUG it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-20 19:40:33,084 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] No active profile set, falling back to default profiles: default
+2019-06-20 19:40:33,959 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-20 19:40:33,974 DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Scanning for repositories in packages it.froststudio3e.login.auth.
+2019-06-20 19:40:33,979 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-06-20 19:40:34,612 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-06-20 19:40:34,612 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-20 19:40:34,756 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-06-20 19:40:35,328 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-20 19:40:35,328 INFO org.mongodb.driver.cluster [main] Adding discovered server localhost:27017 to client view of cluster
+2019-06-20 19:40:35,517 INFO org.mongodb.driver.connection [cluster-ClusterId{value='5d0b93db69b4b639f04a158c', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:5}] to localhost:27017
+2019-06-20 19:40:35,523 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b93db69b4b639f04a158c', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4853372}
+2019-06-20 19:40:35,524 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b93db69b4b639f04a158c', description='null'}-localhost:27017] Discovered cluster type of STANDALONE
+2019-06-20 19:40:35,717 ERROR org.apache.catalina.util.LifecycleBase [main] Failed to start component [Connector[HTTP/1.1-8081]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at it.froststudio3e.login.auth.LoginAuthenticatorApplication.main(LoginAuthenticatorApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:239)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1116)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1202)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-06-20 19:40:35,721 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2019-06-20 19:40:35,730 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+2019-06-20 19:40:57,772 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Starting LoginAuthenticatorApplication on SVILP188 with PID 7784 (D:\Arun\GitHub\login-authenticator\target\classes started by gbs04993 in D:\Arun\GitHub\login-authenticator)
+2019-06-20 19:40:57,775 DEBUG it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-20 19:40:57,775 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] No active profile set, falling back to default profiles: default
+2019-06-20 19:40:58,609 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-20 19:40:58,621 DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Scanning for repositories in packages it.froststudio3e.login.auth.
+2019-06-20 19:40:58,626 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+2019-06-20 19:40:59,266 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-06-20 19:40:59,266 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-20 19:40:59,428 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-06-20 19:41:00,016 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-20 19:41:00,017 INFO org.mongodb.driver.cluster [main] Adding discovered server localhost:27017 to client view of cluster
+2019-06-20 19:41:00,069 INFO org.mongodb.driver.connection [cluster-ClusterId{value='5d0b93f469b4b61e68cce6ba', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2019-06-20 19:41:00,075 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b93f469b4b61e68cce6ba', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2551452}
+2019-06-20 19:41:00,079 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b93f469b4b61e68cce6ba', description='null'}-localhost:27017] Discovered cluster type of STANDALONE
+2019-06-20 19:41:00,425 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Started LoginAuthenticatorApplication in 3.24 seconds (JVM running for 3.741)
+2019-06-20 19:43:20,939 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-20 19:44:39,696 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Starting LoginAuthenticatorApplication on SVILP188 with PID 10044 (D:\Arun\GitHub\login-authenticator\target\classes started by gbs04993 in D:\Arun\GitHub\login-authenticator)
+2019-06-20 19:44:39,698 DEBUG it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2019-06-20 19:44:39,698 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] No active profile set, falling back to default profiles: default
+2019-06-20 19:44:40,542 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-06-20 19:44:40,553 DEBUG org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Scanning for repositories in packages it.froststudio3e.login.auth.
+2019-06-20 19:44:40,558 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 4ms. Found 0 repository interfaces.
+2019-06-20 19:44:41,185 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-06-20 19:44:41,185 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-20 19:44:41,328 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2019-06-20 19:44:41,939 INFO org.mongodb.driver.cluster [main] Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-06-20 19:44:41,940 INFO org.mongodb.driver.cluster [main] Adding discovered server localhost:27017 to client view of cluster
+2019-06-20 19:44:41,990 INFO org.mongodb.driver.connection [cluster-ClusterId{value='5d0b94d169b4b6273c24f679', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2019-06-20 19:44:41,994 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b94d169b4b6273c24f679', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2705726}
+2019-06-20 19:44:41,995 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='5d0b94d169b4b6273c24f679', description='null'}-localhost:27017] Discovered cluster type of STANDALONE
+2019-06-20 19:44:42,360 INFO it.froststudio3e.login.auth.LoginAuthenticatorApplication [main] Started LoginAuthenticatorApplication in 3.16 seconds (JVM running for 3.649)
+2019-06-20 19:44:47,154 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8082-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
