@@ -1,11 +1,17 @@
 package it.froststudio3e.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.List;
 
 public class UserDto {
 
     private String username;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private List<Role> role = null;
 
     /**
@@ -52,7 +58,7 @@ public class UserDto {
         return this;
     }
 
-    public List<Role> getRoles() {
+    public List<Role> getRole() {
         return role;
     }
 

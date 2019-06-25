@@ -2,8 +2,10 @@ package it.froststudio3e.service.impl;
 
 import it.froststudio3e.dao.UserRepository;
 import it.froststudio3e.model.User;
+import it.froststudio3e.model.UserDto;
 import it.froststudio3e.service.UserService;
 import org.bson.types.ObjectId;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -25,8 +27,12 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     private UserRepository userRepository;
 
     @Autowired
+    private ModelMapper modelMapper;
+
+    @Autowired
     private BCryptPasswordEncoder bcryptEncoder;
 
+    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userRepository.findByUsername(username);
         if (user == null) {
@@ -45,6 +51,7 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         //return Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
     }
 
+    @Override
     public List<User> findAll() {
         List<User> list = new ArrayList<>();
         userRepository.findAll().iterator().forEachRemaining(list::add);
@@ -67,8 +74,8 @@ public class UserServiceImpl implements UserDetailsService, UserService {
     }
 
     @Override
-    public User save(User user) {
+    public UserDto save(User user) {
         user.setPassword(bcryptEncoder.encode(user.getPassword()));
-        return userRepository.save(user);
+        return modelMapper.map(userRepository.save(user), UserDto.class);
     }
 }

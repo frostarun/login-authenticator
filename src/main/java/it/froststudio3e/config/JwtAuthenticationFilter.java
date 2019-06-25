@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Enumeration;
 
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
@@ -30,6 +31,12 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String header = req.getHeader(Constants.HEADER_STRING);
         String username = null;
         String authToken = null;
+        logger.info(header);
+        Enumeration<String> headerNames = req.getHeaderNames();
+        while (headerNames.hasMoreElements()) {
+            String param = headerNames.nextElement();
+            logger.info(param);
+        }
         if (header != null && header.startsWith(Constants.TOKEN_PREFIX)) {
             authToken = header.replace(Constants.TOKEN_PREFIX, "");
             try {
